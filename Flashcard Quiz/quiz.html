@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flashcard Quiz</title>
+    <link rel="stylesheet" href="quiz.css">
+</head>
+<body>
+    <div class="container">
+        <div id="flashcard" class="card">
+            <div class="card-front">
+                <h2 id="word">Word</h2>
+            </div>
+            <div class="card-back">
+                <h2 id="translation"></h2>
+            </div>
+        </div>
+
+        <input type="text" id="answer" placeholder="Type your answer...">
+        <button id="submit-btn" onclick="checkAnswer()">Submit</button>
+        <p id="score"></p>
+        <button id="play-again-btn" style="display: none;" onclick="startQuiz()">Play Again</button>
+    </div>
+
+    <script src="quiz.js"></script>
+</body>
+</html>
