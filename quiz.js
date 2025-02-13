@@ -38,7 +38,7 @@ const vocabulary = {
     "Milk": ["Leche"],
     "Coffee": ["Café", "Cafe"],
     "Tea": ["Té", "Te"],
-    "Beer": ["Cerveza"], ["Birra"],
+    "Beer": ["Cerveza", "Birra"],
     "Phone": ["Teléfono", "Telefono"],
     "Money": ["Dinero"],
     "Clothes": ["Ropa"],
