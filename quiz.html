@@ -8,18 +8,22 @@
 </head>
 <body>
     <div class="container">
-        <div id="flashcard" class="card">
-            <div class="card-front">
-                <h2 id="word">Word</h2>
-            </div>
-            <div class="card-back">
-                <h2 id="translation"></h2>
+        <h1>Spanish Flashcard Quiz</h1>
+        
+        <div class="card-container">
+            <div id="flashcard" class="card">
+                <div class="card-front">
+                    <h2 id="word">Word</h2>
+                </div>
+                <div class="card-back">
+                    <h2 id="translation"></h2>
+                </div>
             </div>
         </div>
 
         <input type="text" id="answer" placeholder="Type your answer...">
         <button id="submit-btn" onclick="checkAnswer()">Submit</button>
-        <p id="score"></p>
+        <p id="score">Score: 0/15</p>
         <button id="play-again-btn" style="display: none;" onclick="startQuiz()">Play Again</button>
     </div>
 

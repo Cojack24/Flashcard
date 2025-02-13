@@ -1,3 +1,4 @@
+/* General styling */
 body {
     font-family: Arial, sans-serif;
     background-color: #f4f4f4;
@@ -10,17 +11,34 @@ body {
 
 .container {
     text-align: center;
+    width: 90%;
+    max-width: 400px;
+    padding: 20px;
+    background: white;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
+    border-radius: 12px;
+}
+
+h1 {
+    color: #333;
+    margin-bottom: 15px;
+}
+
+/* Card styling */
+.card-container {
+    display: flex;
+    justify-content: center;
+    perspective: 1000px;
 }
 
 .card {
     width: 250px;
     height: 150px;
-    perspective: 1000px;
-    margin: 20px auto;
     position: relative;
+    transform-style: preserve-3d;
+    transition: transform 0.6s;
     border-radius: 10px;
     box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
-    transition: transform 0.6s;
 }
 
 .card-front, .card-back {
@@ -33,27 +51,25 @@ body {
     align-items: center;
     border-radius: 10px;
     transition: transform 0.6s, background-color 0.6s;
+    font-size: 20px;
+    font-weight: bold;
 }
 
 /* Default front and back colors */
 .card-front {
-    background: #3498db; /* Default blue */
+    background: #3498db; /* Blue */
     color: white;
 }
 
 .card-back {
-    background: #ecf0f1; /* Light grey for back */
+    background: #ecf0f1; /* Light grey */
     color: black;
     transform: rotateY(180deg);
 }
 
 /* Flip animation */
-.flipped .card-front {
+.flipped {
     transform: rotateY(180deg);
-}
-
-.flipped .card-back {
-    transform: rotateY(0deg);
 }
 
 /* Correct answer - Green on back */
@@ -67,8 +83,10 @@ body {
     background-color: #e74c3c !important;
     color: white;
 }
+
+/* Input field */
 input {
-    width: 80%;
+    width: 90%;
     padding: 12px;
     font-size: 16px;
     margin-top: 10px;
@@ -85,8 +103,9 @@ input:focus {
     outline: none;
 }
 
+/* Buttons */
 button {
-    width: 85%;
+    width: 95%;
     padding: 12px;
     border: none;
     background: #27ae60;
@@ -102,4 +121,20 @@ button {
 
 button:hover {
     background: #219150;
+}
+
+#play-again-btn {
+    background: #f39c12;
+}
+
+#play-again-btn:hover {
+    background: #d68910;
+}
+
+/* Score text */
+#score {
+    font-size: 18px;
+    font-weight: bold;
+    color: #333;
+    margin-top: 10px;
 }
